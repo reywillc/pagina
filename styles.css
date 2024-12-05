@@ -1,0 +1,142 @@
+/* Estilos generales */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;  /* Esto hace que el contenido principal y el footer estén en columnas */
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    flex-grow: 1;  /* Esto asegura que el contenido principal ocupe el espacio disponible */
+    padding: 30px;
+    text-align: center;
+}
+
+#inicio p{
+    font-size: 20px;
+}
+
+/* Sección de Servicios */
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servicio {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+#servicios h2 {
+    margin-top: 100px; /* Esto agrega un espacio por encima del h2 */
+}
+
+
+/* Sección de Contacto */
+#contacto {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#contacto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contacto label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contacto button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#contacto button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: auto; /* Esto asegura que el footer se quede al fondo */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .servicios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
