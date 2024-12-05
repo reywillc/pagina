@@ -59,7 +59,7 @@ footer {
 }
 
 /* Diseño responsivo */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     header nav ul li {
         display: block;
         margin: 10px 0;
